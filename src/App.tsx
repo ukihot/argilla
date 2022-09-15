@@ -15,35 +15,75 @@ function App() {
 
     return (
         <div class="container">
-            <h1>Welcome to Tauri!</h1>
-
-            <div class="row">
-                <a href="https://vitejs.dev" target="_blank">
-                    <img src="/vite.svg" class="logo vite" alt="Vite logo" />
-                </a>
-                <a href="https://tauri.app" target="_blank">
-                    <img src="/tauri.svg" class="logo tauri" alt="Tauri logo" />
-                </a>
-                <a href="https://solidjs.com" target="_blank">
-                    <img src={logo} class="logo solid" alt="Solid logo" />
-                </a>
-            </div>
-
-            <p>Click on the Tauri, Vite, and Solid logos to learn more.</p>
+            <h1>商品コード登録依頼</h1>
 
             <div class="row">
                 <div>
                     <input
                         id="greet-input"
                         onChange={(e) => setName(e.currentTarget.value)}
-                        placeholder="Enter a name..."
+                        placeholder="商品名"
                     />
-                    <Button variant="contained" onClick={() => greet()}>
-                        ようこそ
-                    </Button>
                 </div>
             </div>
+            <div>
+                <p></p>
+            </div>
 
+            <div class="row">
+                <div>
+                    <input
+                        id="greet-input"
+                        onChange={(e) => setName(e.currentTarget.value)}
+                        placeholder="規格名"
+                    />
+                </div>
+            </div>
+            <div>
+                <p></p>
+            </div>
+
+            <div class="row">
+                <div>
+                    <input
+                        id="greet-input"
+                        onChange={(e) => setName(e.currentTarget.value)}
+                        placeholder="分類名"
+                    />
+                </div>
+            </div>
+            <div>
+                <p></p>
+            </div>
+
+            <div class="row">
+                <div>
+                    <input
+                        id="greet-input"
+                        onChange={(e) => setName(e.currentTarget.value)}
+                        placeholder="単位"
+                    />
+                </div>
+            </div>
+            <div>
+                <p></p>
+            </div>
+
+            <div class="row">
+                <div>
+                    <input
+                        id="greet-input"
+                        onChange={(e) => setName(e.currentTarget.value)}
+                        placeholder="仕入先"
+                    />
+                </div>
+            </div>
+            <div>
+                <p></p>
+            </div>
+            <Button variant="contained" onClick={() => greet()}>
+                登録申請
+            </Button>
             <p>{greetMsg}</p>
         </div>
     );
